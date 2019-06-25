@@ -1,2 +1,5 @@
 public/app.js
 node_modules/
+data/db.json
+server/db.json
+db.json

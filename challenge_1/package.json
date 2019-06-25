@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "json": "json-server --watch data/db.json",
+    "server": "nodemon server/jsonIndex.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,12 +16,14 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "express": "^4.17.1",
     "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
     "json-server": "^0.15.0",
     "path": "^0.12.7",
     "react": "^16.8.6",
