@@ -48,6 +48,7 @@ class App extends React.Component {
 
   handlePageClick(data) {
     var newPageNumber = data.selected;
+    console.log(data.selected);
     $.ajax({
       method: 'GET',
       url: `http://localhost:3001/events?q=${this.state.query}&_page=${newPageNumber}&_limit=10`,
