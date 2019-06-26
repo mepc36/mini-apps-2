@@ -47,8 +47,6 @@ class App extends React.Component {
   }
 
   handlePageClick(data) {
-    console.log(`data: ${JSON.stringify(data)}`);
-
     var newPageNumber = data.selected;
     $.ajax({
       method: 'GET',
