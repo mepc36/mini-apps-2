@@ -10,7 +10,6 @@ class App extends React.Component {
       score: 0,
       onAStrike: "false",
       onASpare: "false",
-      asd: "false",
       ball: "1",
       frame: "1",
       spareBonus: "0",
@@ -43,7 +42,6 @@ class App extends React.Component {
       console.log(`Good job! You now are on a spare bonus.`);
       newOnASpare = "true";
       console.log(`${newOnASpare}`);
-      return;
     } else {
       newOnASpare = "false";
     }
@@ -83,6 +81,8 @@ class App extends React.Component {
       console.log(`Here's your spare bonus!`);
       newScore += this.state.pinsToKnockDown;
     }
+
+    console.log(`last: ${newOnASpare}`);
 
     this.setState({
       score: newScore,
